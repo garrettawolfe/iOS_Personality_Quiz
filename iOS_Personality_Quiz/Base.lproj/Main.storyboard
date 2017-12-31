@@ -37,7 +37,7 @@
                                 <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="23"/>
                                 <state key="normal" title="Start Quiz"/>
                                 <connections>
-                                    <segue destination="Xc4-UQ-Jow" kind="show" id="FjT-bY-0XM"/>
+                                    <segue destination="DL9-xh-5Q0" kind="show" id="FjT-bY-0XM"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🐔" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0bG-MG-4IQ">
@@ -65,7 +65,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="uZb-tk-Pqn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6aC-s3-XTt"/>
                             <constraint firstItem="Pwi-vf-kt9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-4" id="G4l-n1-0CU"/>
@@ -97,28 +97,76 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="YZG-wC-xKM"/>
                     </view>
+                    <navigationItem key="navigationItem" id="COR-XY-TNh"/>
                     <connections>
                         <segue destination="ONO-o1-oue" kind="show" identifier="ResultsSeg" id="iUK-0a-Fzr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mq3-u4-bpC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="892" y="166"/>
+            <point key="canvasLocation" x="1972" y="134"/>
         </scene>
-        <!--View Controller-->
+        <!--Results-->
         <scene sceneID="IXD-YI-gBa">
             <objects>
                 <viewController id="ONO-o1-oue" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1a0-R3-zQu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="mU7-bh-VKs">
+                                <rect key="frame" x="0.0" y="293.5" width="375" height="80.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GUh-em-N6d">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OhZ-zy-vfm">
+                                        <rect key="frame" x="0.0" y="60" width="375" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="CCq-AI-PYb" firstAttribute="trailing" secondItem="mU7-bh-VKs" secondAttribute="trailing" id="Ikl-Ac-pAo"/>
+                            <constraint firstItem="mU7-bh-VKs" firstAttribute="centerY" secondItem="1a0-R3-zQu" secondAttribute="centerY" id="NG7-9r-Cj5"/>
+                            <constraint firstItem="mU7-bh-VKs" firstAttribute="leading" secondItem="CCq-AI-PYb" secondAttribute="leading" id="fZf-je-cfM"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="CCq-AI-PYb"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Results" id="dNr-0E-tDU">
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="Rwd-ZN-2be">
+                            <color key="tintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nyp-9O-F0H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1612" y="134"/>
+            <point key="canvasLocation" x="2794" y="134"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="0Rq-Mi-pxX">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DL9-xh-5Q0" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ZLp-dw-r5A">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Xc4-UQ-Jow" kind="relationship" relationship="rootViewController" id="4nb-D1-BOd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ev4-Ac-Y64" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="891.20000000000005" y="165.51724137931035"/>
         </scene>
     </scenes>
 </document>
