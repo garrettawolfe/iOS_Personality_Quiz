@@ -42,8 +42,6 @@
 		A10849C91FF87E4600A7E045 = {
 			isa = PBXGroup;
 			children = (
-				A193050F1FF88CDD00F059DE /* QuestionViewController.swift */,
-				A19305111FF88D0500F059DE /* ResultsViewController.swift */,
 				A10849D41FF87E4600A7E045 /* iOS_Personality_Quiz */,
 				A10849D31FF87E4600A7E045 /* Products */,
 			);
@@ -60,6 +58,8 @@
 		A10849D41FF87E4600A7E045 /* iOS_Personality_Quiz */ = {
 			isa = PBXGroup;
 			children = (
+				A193050F1FF88CDD00F059DE /* QuestionViewController.swift */,
+				A19305111FF88D0500F059DE /* ResultsViewController.swift */,
 				A10849D51FF87E4600A7E045 /* AppDelegate.swift */,
 				A10849D71FF87E4600A7E045 /* IntroViewController.swift */,
 				A10849D91FF87E4600A7E045 /* Main.storyboard */,
