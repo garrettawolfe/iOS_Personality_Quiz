@@ -14,6 +14,7 @@
 		A10849E01FF87E4700A7E045 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A10849DE1FF87E4700A7E045 /* LaunchScreen.storyboard */; };
 		A19305101FF88CDD00F059DE /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A193050F1FF88CDD00F059DE /* QuestionViewController.swift */; };
 		A19305121FF88D0500F059DE /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19305111FF88D0500F059DE /* ResultsViewController.swift */; };
+		A19305141FFCF3DC00F059DE /* QuestionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19305131FFCF3DC00F059DE /* QuestionData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		A10849E11FF87E4700A7E045 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A193050F1FF88CDD00F059DE /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		A19305111FF88D0500F059DE /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		A19305131FFCF3DC00F059DE /* QuestionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +44,7 @@
 		A10849C91FF87E4600A7E045 = {
 			isa = PBXGroup;
 			children = (
+				A19305131FFCF3DC00F059DE /* QuestionData.swift */,
 				A10849D41FF87E4600A7E045 /* iOS_Personality_Quiz */,
 				A10849D31FF87E4600A7E045 /* Products */,
 			);
@@ -144,6 +147,7 @@
 			files = (
 				A10849D81FF87E4600A7E045 /* IntroViewController.swift in Sources */,
 				A10849D61FF87E4600A7E045 /* AppDelegate.swift in Sources */,
+				A19305141FFCF3DC00F059DE /* QuestionData.swift in Sources */,
 				A19305101FF88CDD00F059DE /* QuestionViewController.swift in Sources */,
 				A19305121FF88D0500F059DE /* ResultsViewController.swift in Sources */,
 			);
