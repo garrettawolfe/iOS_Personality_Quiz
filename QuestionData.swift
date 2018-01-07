@@ -13,7 +13,7 @@ struct Question{
 }
 
 enum ResponseType{
-    case SingleAnswer, MultipleAnswer, Continuum
+    case singleAnswer, multipleAnswer, continuum
 }
 
 struct Answer{
